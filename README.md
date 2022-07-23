@@ -57,7 +57,6 @@ That was pretty simple, right? Now let's make the App live. We just need to star
 $ python3 manage.py runserver:8002
 ```
 You may need to allow host, to do so again open settings.py file and in allowed hosts add '*'
-```
 
 Once the server is hosted, head over to http://127.0.0.1:8000/todos for the App.
 
