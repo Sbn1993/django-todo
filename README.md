@@ -4,9 +4,9 @@ A simple todo app built with django
 ![todo App](https://raw.githubusercontent.com/shreys7/django-todo/develop/staticfiles/todoApp.png)
 ### Setup
 ```bash
-$sudo -i
+$ sudo -i
 First of all make a directory named projects
-$mkdir projects
+$ mkdir projects
 To get this repository, run the following command inside your git enabled terminal
 ```bash
 $ git clone https://github.com/shreys7/django-todo.git
@@ -20,10 +20,10 @@ Then install pip with the help of
 $ apt install python3-pip
 
 update the packages again with 
-$apt-get update
+$ apt-get update
 
 To install django, use
-$pip3 install django
+$ pip3 install django
 
 ```
 Once you have downloaded django, go to the cloned repo directory and run the following command
@@ -35,10 +35,10 @@ $ python3 manage.py makemigrations
 This will create all the migrations file (database migrations) required to run this App.
 ```
 You may get errors, make necessary changes in settings.py file
-$vi todoApp/settings.py
+$ vi todoApp/settings.py
 ```
 Run this again and check for errors/nil
-$python3 manage.py makemigrations
+$ python3 manage.py makemigrations
 ```
 
 Now, to apply this migrations run the following command
