@@ -1,0 +1,38 @@
+#Dockerfile creation for a simple todo-app
+
+>install docker with
+$ apt install docker.io
+
+>create a Dockerfile with the help of vi/nano editor
+$ nano Dockerfile
+$ vi Dockerfile
+
+Dockerfile should be written as:
+======================================
+FROM python:3
+
+RUN pip3 install django==3.2
+
+COPY . .
+
+RUN python3 manage.py makemigrations
+
+CMD ["python3","manage.py","runserver","0.0.0.0:8001"]
+======================================
+>Save the Dockerfile
+
+>Build the dockerfile as image with
+$ docker build . -t todo-appplication
+
+>check the docker images with 
+$ docker images
+
+>also check the docker processes running & archived
+$ docker ps -a
+
+>Finally run the Dockerfile with the created imageID
+$ docker run -p 8005:8005 imageID
+
+Note: we need to perform port mapping 
+before running a dockerfile 
+as the docker port and host-machine port should be mapped.
