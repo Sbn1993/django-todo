@@ -61,4 +61,8 @@ You may need to allow host, to do so again open settings.py file and in allowed 
 
 Once the server is hosted, head over to http://127.0.0.1:8000/todos for the App.
 
+```
+Also checkout to perform the same operation via Dockerfile
+https://github.com/Sbn1993/django-todo/blob/develop/Dockerfile%20for%20todo-app.txt
+
 Cheers and Happy Coding :)
